@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/allCheckBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity=""
+        android:text="모두 동의합니다."
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="142dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/firstCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[필수 메탈러 서비스이용약관]"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/secondCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[필수] 개인정보 수집 및 이용약관"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/thirdCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[선택] 프로필 정보 추가 수집 동의"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/fourthCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[선택] 광고성 정보 수신 동의"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="318dp" />
+</LinearLayout>
